@@ -30,3 +30,36 @@ ans --
 7) ![alt text](image-1.png)
 8) ![alt text](image-2.png)
 9) still this are the static content we don't appy any dynamc content and functinalty.
+
+## --------------- now are going to make the fetch feature ----------------------------
+10) ## ---- Utility foler why required in react-js ----------------------------
+ans - > 
+
+In React applications, a `utility` folder is often created to organize and store helper functions, constants, and other reusable logic that doesn't fit neatly into specific components or pages. Here’s why it’s beneficial:
+
+1. **Code Reusability**: Commonly used functions (like data formatting, calculations, API calls, etc.) are often placed in a `utility` folder. This helps avoid repetitive code across components by centralizing shared logic, making your codebase DRY (Don’t Repeat Yourself).
+
+2. **Separation of Concerns**: By isolating utilities from components, each part of your app is more focused on a single responsibility. Components handle UI and presentation, while the `utility` folder contains logic, utilities, and constants. This keeps your components cleaner and easier to understand.
+
+3. **Maintainability**: Utilities are more easily maintained when separated. If a utility function needs to be updated, it’s simpler to find and modify it in the `utility` folder without tracking down every instance across your components.
+
+4. **Improved Testing**: When functions are separated into utilities, they’re easier to test independently. Testing utility functions in isolation means they can be fully verified before being integrated into components, making unit tests more manageable.
+
+5. **Consistent Data Transformation**: If multiple components need to transform data in the same way, storing the transformation logic in a utility function keeps data handling consistent across the app.
+
+Typical contents of a `utility` folder in a React app might include:
+   - **Helper functions** (e.g., `formatDate`, `capitalize`, `calculateTax`).
+   - **Constants** (e.g., predefined arrays or objects, like country lists or status codes).
+   - **APIs** (abstracted fetch functions for REST or GraphQL).
+   - **Custom Hooks** (e.g., `useFetch`, `useDebounce` for custom reusable logic).
+
+This organization supports clean, modular code, especially for larger or scalable projects.
+
+
+11) creating a utiltiy folder to define the fetchData() which will fetch the data from given url and option.
+12) here the fetchData() function is a user defeine function which is define in utility folder beause to fetch the data 
+    from a resource we required the same syntax to make the resuable we are creating in in utility foler.
+13) to fetch the data from the rapid api we need to do subnscript with 0 and then test endpoint then you will get the output
+14) ![alt text](image-5.png)
+15) ![alt text](image-3.png)
+16) ![alt text](image-4.png)
