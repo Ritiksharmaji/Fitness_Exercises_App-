@@ -3,10 +3,10 @@ import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 import { fetchData,exerciseOptions } from '../utility/fetchData';
 import HorizontalScrollbar from './HorizontalScrollbar';
 
-function SearchExercises() {
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
-  const [search, setSearch] = useState('');
-  const [exercises, setExercises] = useState([]);
+   const [search, setSearch] = useState('');
+  // const [exercises, setExercises] = useState([]);
 
   // to decribe the category of execise we are efine the state and useEffect also
   const [bodyParts, setBodyParts] = useState([]);
@@ -72,7 +72,9 @@ function SearchExercises() {
      </Box>
 
      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-        <HorizontalScrollbar data={bodyParts}  />
+        {/* <HorizontalScrollbar data={bodyParts}  /> */}
+        <HorizontalScrollbar data={bodyParts} bodyParts setBodyPart={setBodyPart} bodyPart={bodyPart} />
+        {/* here we are sending the state to mantain the current type of execise  */}
       </Box>
     </Stack>
   )

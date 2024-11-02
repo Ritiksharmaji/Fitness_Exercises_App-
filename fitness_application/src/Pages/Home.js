@@ -6,11 +6,14 @@ import SearchExercises from '../components/SearchExercises';
 import HeroBanner from '../components/HeroBanner';
 
 function Home() {
+  const [exercises, setExercises] = useState([]);
+  const [bodyPart, setBodyPart] = useState('all');
   return (
     <Box>
       <HeroBanner />
-      <SearchExercises  />
-      <Exercises />
+      <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+      <Exercises setExercises={setExercises} exercises={exercises} bodyPart={bodyPart} />
+      {/* // here we are passing the same props to more than one components for that we can also use the useContext( ) Hook  */}
     </Box>
   )
 }

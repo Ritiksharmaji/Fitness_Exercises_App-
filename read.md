@@ -65,4 +65,7 @@ This organization supports clean, modular code, especially for larger or scalabl
 16) ![alt text](image-4.png)
 17) to getting the all the item type 
 18) ![alt text](image-6.png)
+19) ![alt text](image-7.png)
+20) ![alt text](image-8.png)
+
 
