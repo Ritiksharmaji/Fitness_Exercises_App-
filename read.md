@@ -73,6 +73,11 @@ This organization supports clean, modular code, especially for larger or scalabl
 24) ![alt text](image-10.png)
 25) setting the paggination based on total number of execise 
 26) ![alt text](image-11.png)
+27) now we are going to display some number of execise on each and every page.
+28) ![alt text](image-12.png)
+29) ![alt text](image-13.png)
+30) ![alt text](image-14.png)
+31) 
 
 
 
