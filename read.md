@@ -84,6 +84,11 @@ This organization supports clean, modular code, especially for larger or scalabl
 35) now we are going to create the details page of each exercise
 36) ![alt text](image-18.png)
 37) ![alt text](image-19.png)
+38) to get the similar youtube video 
+39) ![alt text](image-20.png)
+40) ![alt text](image-21.png)
+41) ![alt text](image-22.png)
+42) 
 
 
 
