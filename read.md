@@ -71,5 +71,8 @@ This organization supports clean, modular code, especially for larger or scalabl
 22) ![alt text](image-9.png)
 23) showing the execusie in the page
 24) ![alt text](image-10.png)
+25) setting the paggination based on total number of execise 
+26) ![alt text](image-11.png)
+
 
 
