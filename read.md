@@ -77,7 +77,11 @@ This organization supports clean, modular code, especially for larger or scalabl
 28) ![alt text](image-12.png)
 29) ![alt text](image-13.png)
 30) ![alt text](image-14.png)
-31) 
+31) now we are going to apply the filter based on that bodyPart cart
+32) ![alt text](image-15.png)
+33) ![alt text](image-16.png)
+34) ![alt text](image-17.png)
+35) 
 
 
 
