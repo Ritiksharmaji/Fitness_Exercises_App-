@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 import { fetchData,exerciseOptions } from '../utility/fetchData';
 import HorizontalScrollbar from './HorizontalScrollbar';
+import Loader from './Loader';
 
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
    const [search, setSearch] = useState('');
+   const[dataLoader, setDataLoader] =useState(false)
   // const [exercises, setExercises] = useState([]);
 
   // to decribe the category of execise we are efine the state and useEffect also
@@ -21,7 +23,16 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     fetchExercisesData();
   }, []);
 
+
+const handleSearchwithLoader = ()=>{
+  if(dataLoader){
+    handleSearch()
+  }else{
+<Loader/>
+  }
+}
   const handleSearch = async () => {
+    
     if (search) {
       const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises?limit=0&offset=0', exerciseOptions);
 
@@ -42,6 +53,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       
       setSearch('');
       setExercises(searchedExercises);
+      setDataLoader(true)
       
     }
   };
@@ -65,7 +77,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
          <Button className="search-btn" 
          sx={{ bgcolor: '#FF2625', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' } }} 
-         onClick={handleSearch}>
+        //  onClick={handleSearch}>
+         onClick={handleSearchwithLoader}>
           Search
         </Button>
 
