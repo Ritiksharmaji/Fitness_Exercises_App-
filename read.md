@@ -69,5 +69,7 @@ This organization supports clean, modular code, especially for larger or scalabl
 20) ![alt text](image-8.png)
 21) displaying the data based on search 
 22) ![alt text](image-9.png)
+23) showing the execusie in the page
+24) ![alt text](image-10.png)
 
 
