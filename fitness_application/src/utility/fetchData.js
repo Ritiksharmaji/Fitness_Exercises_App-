@@ -7,6 +7,14 @@ export const exerciseOptions = {
 	}
   };
 
+  export const youtubeOptions = {
+    method: 'GET',
+    path: '/channel/about?id=UCE_M8A5yxnLfW0KghEeajjw',
+    headers: {
+      'x-rapidapi-key': 'c3e3069a9dmsh152fb5036654ac2p1b5a6fjsn41cd010862dc',
+      'x-rapidapi-host': 'youtube-search-and-download.p.rapidapi.com'
+    }
+  };
 
   
   export const fetchData = async (url, options) => {
